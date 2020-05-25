@@ -24,6 +24,12 @@ steps:
     tasks: 'assembleDebug test'
   displayName: gradlew assembleDebug test
 
+- task: AndroidSigning@2
+  inputs:
+    apkFiles: '**/*.apk'
+    jarsign: true
+    jarsignerKeystoreFile: 'my-release-key.keystore'
+
 - task: CopyFiles@2
   inputs:
     contents: '**/*.apk'
