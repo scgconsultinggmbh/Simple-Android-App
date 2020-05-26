@@ -29,7 +29,9 @@ steps:
     apkFiles: '**/*.apk'
     jarsign: true
     jarsignerKeystoreFile: 'my-release-key.keystore'
+    jarsignerKeystorePassword: ''
     jarsignerKeystoreAlias: 'alias_name'
+    jarsignerKeyPassword: ''
 
 - task: CopyFiles@2
   inputs:
