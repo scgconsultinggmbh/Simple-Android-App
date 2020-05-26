@@ -28,9 +28,9 @@ steps:
   inputs:
     apkFiles: '**/*.apk'
     jarsign: true
-    jarsignerKeystoreFile: 'my-release-key.keystore'
+    jarsignerKeystoreFile: 'apotheke-release-key.keystore'
     jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
-    jarsignerKeystoreAlias: 'alias_name'
+    jarsignerKeystoreAlias: 'apotheke-alias'
     jarsignerKeyPassword: '$(jarsignerKeyPassword)'
 
 - task: CopyFiles@2
